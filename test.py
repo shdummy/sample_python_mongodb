@@ -2,7 +2,7 @@ import unittest
 from mongo import Mongo
 
 
-class TestSuite(unittest.TestCase):
+class SomeTests(unittest.TestCase):
     
     def some_test(self):
         return True
@@ -16,6 +16,20 @@ class TestSuite(unittest.TestCase):
         mongo.populate()
         things = mongo.count()
         self.failIf(things != 5)
+        
+class OtherTests(unittest.TestCase):
+    
+    def im_passing(self):
+        p = True
+        self.failIf(p != 2)
+        
+    def im_passing_too(self):
+        p = True
+        self.failIf(p != 2)
+        
+    def im_passing_three(self):
+        p = True
+        self.failIf(p != 2)
 
 
 def main():
