@@ -19,15 +19,15 @@ class SomeTests(unittest.TestCase):
         
 class OtherTests(unittest.TestCase):
     
-    def im_passing(self):
+    def test_passing(self):
         p = True
         self.failIf(p != 2)
         
-    def im_passing_too(self):
+    def test_passing_too(self):
         p = True
         self.failIf(p != 2)
         
-    def im_passing_three(self):
+    def test_passing_three(self):
         p = True
         self.failIf(p != 2)
 
