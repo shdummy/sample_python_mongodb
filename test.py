@@ -5,7 +5,7 @@ from mongo import Mongo
 class TestSuite(unittest.TestCase):
     
     def some_test(self):
-        return true
+        return True
 
     def test(self):
         mongo = Mongo()
