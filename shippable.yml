@@ -17,7 +17,8 @@ before_script:
   - mkdir -p shippable/codecoverage
 
 script:
-  - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+  - nosetests test.py --with-xunit --xunit-file=shippable/testresults/app_test.xml
+  - nosetests truth.py --with-xunit --xunit-file=shippable/testresults/truth_test.xml
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 
