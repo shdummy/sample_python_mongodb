@@ -6,6 +6,10 @@ class TestSuite(unittest.TestCase):
     
     def some_test(self):
         return True
+        
+    def failing_test(self):
+        p = True
+        self.failIf(p == True)
 
     def test(self):
         mongo = Mongo()
