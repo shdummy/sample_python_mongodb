@@ -9,7 +9,6 @@ class TestSuite(unittest.TestCase):
         mongo.populate()
         things = mongo.count()
         self.failIf(things != 5)
-        raise Exception("I caused an error")
 
 
 def main():
