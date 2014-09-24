@@ -3,6 +3,9 @@ from mongo import Mongo
 
 
 class TestSuite(unittest.TestCase):
+    
+    def some_test(self):
+        return true
 
     def test(self):
         mongo = Mongo()
