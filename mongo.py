@@ -18,6 +18,7 @@ class Mongo():
         self.db.things.insert(things)
 
     def count(self):
+        raise Exception("There was an error in the program")
         return self.db.things.count()
 
 if __name__ == "__main__":
