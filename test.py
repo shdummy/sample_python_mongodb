@@ -17,9 +17,9 @@ class SomeTests(unittest.TestCase):
         things = mongo.count()
         self.failIf(things != 5)
         
-    @unittest.skip
+    @unittest.skip("Skip this test")
     def skip_this_test(self):
-        self.fail('Shouldn\'t happen')
+        self.fail("Shouldn't happen")
 
 def main():
     unittest.main()
