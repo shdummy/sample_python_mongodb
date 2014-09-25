@@ -16,6 +16,10 @@ class SomeTests(unittest.TestCase):
         mongo.populate()
         things = mongo.count()
         self.failIf(things != 5)
+        
+    @unittest.skip
+    def skip_this_test(self):
+        self.fail('Shouldn\'t happen')
 
 def main():
     unittest.main()
