@@ -11,11 +11,6 @@ services:
 install:
   - pip install -r requirements.txt
 
-# Make folders for the reports
-before_script:
-  - mkdir -p shippable/testresults
-  - mkdir -p shippable/codecoverage
-
 script:
   - nosetests truth.py --with-xunit --xunit-file=shippable/testresults/truth_test.xml
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/app_test.xml
@@ -26,6 +21,7 @@ script:
 
 build_timeout: 800000
 
+cache: true
 archive: true
 
 notifications:
