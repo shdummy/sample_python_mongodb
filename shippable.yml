@@ -13,7 +13,8 @@ services:
   - neo4j
   - cassandra
   - couchdb
-  - rethinkdb
+# Rethink isn't starting...
+#  - rethinkdb
   - rabbitmq
 
 install:
