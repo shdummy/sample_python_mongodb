@@ -7,15 +7,15 @@ python:
 # Mongo binds to 127.0.0.1 by default
 services:
   - mongodb
-  - redis
-  - memcached
-  - elasticsearch
-  - neo4j
-  - cassandra
-  - couchdb
+#  - redis
+#  - memcached
+#  - elasticsearch
+#  - neo4j
+#  - cassandra
+#  - couchdb
 # Rethink isn't starting...
 #  - rethinkdb
-  - rabbitmq
+#  - rabbitmq
 
 install:
   - pip install -r requirements.txt
