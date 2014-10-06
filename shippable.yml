@@ -28,8 +28,6 @@ script:
 
 # commit_container: tmlbl/pookiebear
 
-build_timeout: 800000
-
 notifications:
   email:
     - tim@shippable.com
