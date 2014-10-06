@@ -30,9 +30,6 @@ script:
 
 build_timeout: 800000
 
-cache: true
-archive: true
-
 notifications:
   email:
     - tim@shippable.com
